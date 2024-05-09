@@ -1,0 +1,51 @@
+.main{
+    background-color: rgb(77, 213, 254);
+    width: 70%;
+    text-align: center;
+    border: 1 px grey solid;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    background-image: url('/public/quizBG.png');
+    height: 700px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-color: black;
+
+}
+.question-container{
+    position: absolute;
+    top: 173px;
+    left: 145px;
+    width: 65%;
+    
+}
+h2{
+    color: aliceblue;
+    margin-left: 0px;
+}
+.options{
+    display: block;
+    text-align: left;
+    margin-left: 70px;
+}
+.sub_btn{
+    display: block;
+    text-align: left;
+    margin-left: 80px;
+    margin-top: 20px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+.reload{
+    margin-left: 45%;
+    background-color: transparent;
+    border: 2px black solid;
+    
+}
+.btn_cont{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}

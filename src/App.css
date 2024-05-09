@@ -1,0 +1,46 @@
+
+.App {
+  text-align: center;
+  background-image: '/quizBG.png';
+  width: 100%;
+}
+#logo{
+  color: #3a46d9;
+font-size: 64px;
+  font-family: 'Arizonia', cursive;
+  margin-bottom: 0px;
+ 
+}
+body{
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: auto;
+  background-color:#030306;
+  margin: 0;
+  padding: 0;
+overflow: hidden;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
