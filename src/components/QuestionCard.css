@@ -11,14 +11,15 @@
     position: relative;
     background-repeat: no-repeat;
     background-color: black;
+    background-size: contain;
+    max-width: 600px;
 
 }
 .question-container{
     position: absolute;
-    top: 173px;
-    left: 145px;
-    width: 65%;
-    
+    top: 33px;
+    left: 39px;
+    width: 65%;    
 }
 h2{
     color: aliceblue;
@@ -33,10 +34,28 @@ h2{
     display: block;
     text-align: left;
     margin-left: 80px;
-    margin-top: 20px;
     background-color: green;
     border-radius: 5px;
+    margin-top: 20px;
     color: white;
+    text-wrap: nowrap;
+}
+.fixed-bottom h2,
+.fixed-bottom button
+{
+    text-wrap: nowrap;
+    margin-top:  0px;
+}
+.fixed-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    gap: 20px;
+    align-items: center;
+    margin-top: 200px;
+}
+.fixed-bottom h2{
+    width: fit-content;
 }
 .reload{
     margin-left: 45%;
@@ -48,4 +67,34 @@ h2{
     display: flex;
     text-align: center;
     width: 100%;
+}
+@media (max-width:780px) {
+    .main{
+        width: 100%;
+    
+    }
+    .question-container {
+        position: absolute;
+        top: 26px;
+        width: 86%;
+        left: 73px;
+    }
+    .options {
+        margin-left: 0;
+    }
+    h2 {
+        color: aliceblue;
+        margin-left: -14px;
+        font-size: 18px;
+        text-align: start;
+        width: 90%;
+    }
+    .fixed-bottom{
+        margin-top: 100px;
+    }
+    .reload {
+        margin-left: 0;
+        background-color: transparent;
+        border: 2px black solid;
+    }
 }
